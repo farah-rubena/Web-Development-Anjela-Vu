@@ -1,0 +1,48 @@
+<!-- Types of selectors  -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        background-color: aqua;
+      }
+
+      .one {
+        background-color: red;
+      }
+
+      #two {
+        background-color: blue;
+      }
+
+      p[draggable] {
+        background-color: black;
+        color: white;
+      }
+
+      p[draggable="true"] {
+        background-color: blueviolet;
+      }
+      * {
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Element Selectors</p>
+    <p class="one">Class Selector</p>
+    <p id="two">OD Selector</p>
+    <p draggable>Attribute Selector</p>
+    <p draggable="true">Attribute Value Selector</p>
+    <ol>
+      <li value="4">One</li>
+      <li>Two</li>
+      <li>Three</li>
+      <li>Four</li>
+    </ol>
+  </body>
+</html>
