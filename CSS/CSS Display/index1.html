@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .one > p {
+        background-color: aqua;
+      }
+
+      .two p > span {
+        background-color: brown;
+      }
+
+      .four {
+        display: none;
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Display</h1>
+    <h2>Block Level Elements - Take up the entire width of the webpage</h2>
+    <div class="one">
+      <p>Paragraph is a block level element</p>
+    </div>
+    <div class="two">
+      <p>
+        Span is an <span>Inline</span>element. It takes up the same width as
+        it's content.
+      </p>
+    </div>
+    <div class="three">
+      <p>
+        Inline block is a combination of block and Inline. It allwos other
+        elements to sit next to it and you can change the height and width
+      </p>
+    </div>
+    <div class="four">
+      <p>Display:block makes the element disappear</p>
+    </div>
+    <span>Yello</span>
+  </body>
+</html>
