@@ -1,0 +1,7 @@
+.one p {
+    background-color: aquamarine;
+} 
+
+p, h4, .lis {
+    background-color: gold;
+}
