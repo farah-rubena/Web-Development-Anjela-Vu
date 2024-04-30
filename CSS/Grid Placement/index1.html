@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1.5fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 3rem;
+      }
+
+      .items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .cowboy {
+        background-color: antiquewhite;
+      }
+
+      .astronaut {
+        background-color: aqua;
+      }
+
+      .spider {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Placement</h1>
+    <div class="container">
+      <div class="items cowboy">Happy</div>
+      <div class="items astronaut">Go</div>
+      <div class="items spider">Lucky</div>
+    </div>
+  </body>
+</html>
