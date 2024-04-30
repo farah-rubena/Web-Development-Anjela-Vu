@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Layout</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .one {
+        order: 1;
+      }
+
+      .four {
+        order: -5;
+      }
+      .container1 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .container2 {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-start;
+      }
+
+      .container3 {
+        display: flex;
+        gap: 10px;
+        justify-content: flex-end;
+      }
+
+      .container4 {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .container5 {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .container6 {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .container7 {
+        display: flex;
+        justify-content: space-evenly;
+      }
+
+      .container8 {
+        display: flex;
+        height: 50vh;
+        gap: 10px;
+        align-items: flex-start;
+        background-color: antiquewhite;
+      }
+
+      .container9 {
+        display: flex;
+        height: 50vh;
+        background-color: palevioletred;
+        gap: 10px;
+        align-items: flex-end;
+      }
+
+      .container10 {
+        display: flex;
+        gap: 10px;
+        height: 50vh;
+        background-color: violet;
+        align-items: center;
+      }
+
+      .contenta {
+        align-self: flex-end;
+      }
+      .container11 {
+        display: flex;
+        gap: 10px;
+        height: 50vh;
+        background-color: grey;
+        align-items: baseline;
+      }
+
+      .container12 {
+        display: flex;
+        gap: 10px;
+        background-color: aquamarine;
+        height: 50vh;
+        align-items: stretch;
+      }
+
+      .apple{
+        background-color: bisque;
+      }
+      .container13 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 20vh;
+        background-color: azure;
+        gap: 10px;
+        align-content: flex-start;
+      }
+
+      .container14 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: beige;
+        height: 20vh;
+        align-content: flex-end;
+      }
+
+      .container15 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: greenyellow;
+        height: 20vh;
+        align-content: center;
+      }
+
+      .container16 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: pink;
+        height: 20vh;
+        align-content: space-between;
+      }
+
+      .container17 {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: blueviolet;
+        height: 20vh;
+        align-content: space-around;
+      }
+
+      .container18 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 20vh;
+        background-color: aquamarine;
+        align-content: space-evenly;
+      }
+
+      .container19 {
+        display: flex;
+        flex-wrap: wrap;
+        height: 20vh;
+        background-color: brown;
+        align-content: stretch;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Layout</h1>
+    <div class="container">
+      <div class="one" style="background-color: aqua">One</div>
+      <div class="two" style="background-color: red">Two</div>
+      <div class="three" style="background-color: yellow">Three</div>
+      <div class="four" style="background-color: green">Four</div>
+    </div>
+    <hr />
+    <h2>Flex Wrap</h2>
+    <div class="container1">
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+      <div class="a" style="background-color: blue">One</div>
+      <div class="b" style="background-color: pink">Two</div>
+      <div class="c"nrod">Three</div>
+      <div class="d" style="background-color: lightgreen">Four</div>
+    </div>
+
+    <h2>Flex Justify Content - Aligns Items on the Main Axis (L2R) Horizontally</h2>
+    <p><b>justify-content-flex:start [Items align to the left side of the container.]</b></p>
+    <div class="container2">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <p><b>Justify-content:flex-end [Items align to the right side of the container.]</b></p>
+    <div class="container3">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <p><b>justify-content:center [Items align to the center of the container.]</b></p>
+    <div class="container4">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <p>
+      <b
+        >justify-content:space-between (first and last items are stuck to the
+        edges. Items display with equal spacing between them)</b
+      >
+    </p>
+    <div class="container5">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <p>
+      <b
+        >justify-content:space-around (gap between the left and the right add up
+        to the space between each of the items - Items display with equal spacing around them.)
+      </b>
+    </p>
+    <div class="container6">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <p><b>justify-content:space-evenly (makes sure all gaps are equal)</b></p>
+    <div class="container7">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <h2>Flex Align Items</h2>
+    <p><b>align-items:flex-start [Items align to the top of the container]</b></p>
+    <div class="container8">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-items:flex-end [Items align to the bottom of the container]</b></p>
+    <div class="container9">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-items:center[Items align at the vertical center of the container]</b></p>
+    <div class="container10">
+      <div class="contenta">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-items:baseline [Items display at the baseline of the container]</b></p>
+    <div class="container11">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-items:stretch : stretches flex items to fill the cross-axis of the flex container [Items are stretched to fit the container.].</b></p>
+    <div class="container12">
+      <div class="content1">One</div>
+      <div class="content2 apple">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <hr />
+    <h2>Align Content</h2>
+    <p><b>align-content:flex-start</b></p>
+    <div class="container13">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:flex-end</b></p>
+    <div class="container14">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:center</b></p>
+    <div class="container15">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:space-between</b></p>
+    <div class="container16">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:space-around</b></p>
+    <div class="container17">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:space-evenly</b></p>
+    <div class="container18">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>align-content:stretch</b></p>
+    <div class="container19">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <h2>Flex Wrap</h2>
+    <p><b>flex-wrap:nowrap [every item is fi into a single line</b></p>
+    <div class="container19">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>flex-wrap:wrap [items wrap around additional lines]</b></p>
+    <div class="container19">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+    <p><b>flex-wrap:wrap-reverse[Items wrap around to additional lines in reverse] </b></p>
+    <div class="container19">
+      <div class="content1">One</div>
+      <div class="content2">Two</div>
+      <div class="content3">Three</div>
+      <div class="content4">Four</div>
+    </div>
+  </body>
+</html>

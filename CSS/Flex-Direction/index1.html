@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container ul {
+        display: flex;
+        gap: 1rem;
+        flex-direction: row;
+        flex-basis: 200px;
+      }
+      li {
+        list-style-type: none;
+      }
+
+      .container-col ul {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+      }
+
+      ul > li {
+        flex-basis: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex Direction</h1>
+    <p>If Main Axis is LEFT to RIGHT then Cross Axis id Top to Bottom</p>
+    <div class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">All Products</a></li>
+        <li><a href="#">Subscribe</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+
+    <hr />
+    <p>If Main Axis is TOP to BOTTOM then Cross Axis is LEFT to RIGHT</p>
+    <div class="container-col">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="">All Products</a></li>
+        <li><a href="">Blog</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </body>
+</html>
