@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        gap: 10px;
+      }
+
+      .container-child {
+        border: 2px solid blue;
+        width: 400px;
+        /* Incase flex-basis is defined width is ignored */
+        flex-basis: auto;
+        /* max-width: 50px;
+        min-width: 300px; */
+        flex-shrink: 1;
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flex-Sizing</h1>
+    <div class="container">
+      <p class="container-child">Home</p>
+      <p class="container-child">About</p>
+      <p class="container-child">Contact Us</p>
+      <p class="container-child">The Best Programming School</p>
+    </div>
+  </body>
+</html>
