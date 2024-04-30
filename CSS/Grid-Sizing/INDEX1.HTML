@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* fixed sied grids like the one below made using pixels are non-responsive */
+      .container {
+        display: grid;
+        /* grid-template-columns: 200px 400px;
+        grid-template-rows: 350px 200px; */
+        /* FIXED SIZE GRIDS */
+        /* grid-template: 350px 200px / 200px 400px; */
+        /* AUTO SIZE GRIDS: gives a little responsiveness */
+        /* grid-template: 200px auto / 100px auto; */
+        /* FRACTIONAL SIZE: it will grow and shrink basis the width and content size  */
+        /* grid-template: 1fr 2fr / 1fr 2fr; */
+        /* MINMAX SIZE:Responsive we define the minwidth and maxwidth we want our column to be */
+        /* grid-template-rows: 200px 400px;
+        grid-template-columns: 200px minmax(400px, 800px);
+        REPEAT */
+        grid-template-rows: repeat(2, 100px);
+        grid-template-columns: repeat(2, 300px);
+      }
+
+      .one {
+        background-color: lightcoral;
+      }
+
+      .two {
+        background-color: lightcyan;
+      }
+
+      .three {
+        background-color: lightgray;
+      }
+      .four {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Grid Sizing</h1>
+    <div class="container">
+      <div class="grid-item one">1</div>
+      <div class="grid-item two">2</div>
+      <div class="grid-item three">3</div>
+      <div class="grid-item four">4</div>
+    </div>
+  </body>
+</html>
